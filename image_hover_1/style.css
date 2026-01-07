@@ -1,0 +1,49 @@
+body{
+    margin:0;
+    padding:0;
+    background:#555;
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background-color: #222;
+}
+.clip{
+    position:absolute;
+     width:100%;
+    height:100%;
+    transition: all 0.8s;
+}
+.clip1{
+    background: url(coffee_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0, 46% 0,39% 100%, 0 100%);
+}
+.clip2{
+    background: url(coffee_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(19% 0, 87% 0,64% 100% ,33% 100%);
+}
+.clip3{
+    background: url(coffee_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(82% 0,100%  0, 100% 100%,63% 100%);
+}
+.container:hover .clip{
+    clip-path: polygon(100% 0,100% 0,100% 100%,100% 100%); /*disappearing complete images*/
+}
+.container .clip:hover{
+    clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);/* make it appear full image */
+}

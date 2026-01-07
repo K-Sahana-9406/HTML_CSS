@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: bisque;
+}
+.scroll-obj{
+padding: 20px;
+}
+.container{
+    background-color: black;
+    width: 25rem;
+    padding: 30px;
+}
+.scroll-div{
+    width: 400px;
+    height: 500px;
+ 
+    overflow-y: scroll;
+}

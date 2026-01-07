@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    color: bisque;
+    background-color: black;
+ 
+   
+}
+
+.img{
+    background: url(coffee_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s;
+    transform: translateY(100px);
+    width:400px;
+height: 400px;
+}
+.img:hover{
+    transform: translateY(0);
+   
+    background-position: bottom;
+}

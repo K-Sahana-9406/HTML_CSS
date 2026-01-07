@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.text{
+   text-align: center;
+   color: white;
+   position:absolute;
+   padding: 150px;
+}
+h4{
+    margin: 30px;
+}
+.fa-solid{
+   color:yellow;
+}
+
+.container{
+    background-color: black;
+    height :400px;
+    width: 500px;
+}
+.img-div{
+    background: url(coffee_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height :400px;
+    width: 500px;
+    clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+    transition: all 0.5s;
+}
+.img-div:hover{
+clip-path:polygon(100% 0,100% 0,100% 100%,100% 100%);
+}
