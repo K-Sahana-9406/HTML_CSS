@@ -1,0 +1,286 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: 
+    #c2cacc;
+   color: var(--small);
+}
+:root{
+    --navy: #0f202c;
+    --light: #165582;
+    --btn: #204661;
+    --hover:#1b3b52;
+    --small:rgb(201, 197, 197);
+}
+
+/* NAVIGATION */
+.nav{
+    display:flex;
+    justify-content: space-around;
+    background-color:var(--navy);
+    position: fixed; 
+    width: 100%;
+    top:0;
+    height:70px;
+    z-index: 10;
+}
+.contents{
+    display:flex;
+    padding-top: 25px;
+}
+.search{
+    padding-top: 25px;
+
+}
+a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--light);
+}
+a:hover{
+    text-decoration:underline; 
+}
+
+/* HOME */
+.register{
+    width: 100%;
+    height: 600px;
+    background: url("/ass-1/assets/img1.jpg") ;
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top:70px;
+    position: relative;
+    display:flex;
+    justify-content: space-around;
+}
+.register::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+ .social-icons{
+   margin:20px 0px;
+} 
+.app{
+    margin: 20px;
+}
+.log{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom:1px solid black;
+    width: 100%;
+   color: black;
+}
+.signUp{
+    text-align: center;
+    width:300px;
+    height:350px;
+    border-radius: 10px;
+    padding: 20px;
+      margin-top:100px;
+      background-color:var(--navy);
+      z-index: 9;
+}
+.intro{
+    width: 500px;
+    margin-top: 100px;
+     z-index: 9;
+}
+.space{
+    margin:0;
+}
+.login-btn{
+    margin-bottom: 10px;
+     padding: 10px 116px;
+ 
+}
+button{
+       background-color:var(--btn) ;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color:white;
+}
+button:hover{
+    background-color:var(--hover);
+}
+h1,h2{
+  color: var(--light) ;
+}
+
+/* ABOUT US */
+.about{
+    display: flex;
+}
+.img1{
+    background-image: url("assets/img10.jpg");
+    height: 200px;
+    width:200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 300px;
+    margin: 50px;
+}
+.img2{
+        background-image: url("assets/img6.jpg");
+    height: 350px;
+    width:250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin:50px 10px;
+}
+.card{
+    width:330px;
+    margin-top:50px;
+    margin-left: 180px;
+    border-radius: 20px;
+    padding: 20px;
+    height:290px;
+    background-color: var(--navy);
+}
+/* PROJECTS */
+.images{
+    display:flex;
+    gap:20px;
+   justify-content: center;
+}
+
+.img{
+    height:280px;
+    width:230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:2px solid black;
+}
+.i1{
+background-image: url("assets/img2.jpg");
+}
+.i2{
+background-image: url("assets/img3.jpg");
+}
+.i3{
+background-image: url("assets/img4.jpg");
+}
+.i4{
+background-image: url("assets/img6.jpg");
+}
+
+/* GRID SECTION */
+.designers{
+       display: grid;
+       grid-template-rows: 300px 300px;
+       grid-template-columns: 300px 350px;
+       padding: 60px;
+       margin-left: 200px;
+       grid-gap: 100px;
+}
+.ele{
+    display: flex;
+    background-color: var(--navy);
+    padding: 20px;
+    height: 300px;
+
+}
+.profile{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height:260px;
+    background-position: center;
+}
+.one{
+background-image: url("assets/face2.jpg");
+}
+.two{
+    background-image: url("assets/face4.jpg");
+}
+
+/* ACHIEVEMENTS */
+.achievements{
+    display:flex;
+    width:100%;
+    background-color: var(--navy);
+    height: 60px;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+.exp{
+    display: flex;
+    width: 100px;
+    height:60px;
+    gap:10px;
+}
+.num{
+    font-size: 50px;
+    color: #1b3b52;
+    margin: 0;
+}
+/* testimony */
+
+.pages{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.p1{
+     height:230px;
+    width:200px;
+    border-radius: 10px;
+    background-color: var(--navy);
+    padding: 20px;
+}
+.image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    width:100px;
+    background-position: center;
+    border-radius: 100%;
+}
+.image1{
+    background-image: url(assets/face1.jpg);
+
+}
+.image2{
+    background-image: url(assets/face3.jpg);
+
+}
+.image3{
+    background-image: url(assets/face4.jpg);
+
+}
+.image4{
+    background-image: url(assets/face6.jpg);
+
+}
+h4{
+    color:var(--hover);
+    margin: 0;
+}
+h3{
+    margin:5PX 0 0 0;
+}
+/* LINKS */
+
+.links{
+    background-color: var(--navy);
+    display:flex;
+    justify-content: space-around;
+    padding:50px ;
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--navy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:1px solid gray ;
+}
+
+
